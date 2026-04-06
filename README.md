@@ -53,6 +53,3 @@ dotnet ef database update
 # Run the application
 dotnet run
 
-![Status](https://img.shields.io/badge/status-in%20development-yellow)
-![.NET Version](https://img.shields.io/badge/.NET-7.0-purple)
-![EF Core](https://img.shields.io/badge/EF%20Core-7.0-blue)
