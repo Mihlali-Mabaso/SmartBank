@@ -1,0 +1,74 @@
+# Ignore Visual Studio temporary files and build results
+
+# .NET build output
+/bin/
+/obj/
+/out/
+/publish/
+
+# Visual Studio files
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# User-specific files
+*.user
+*.userprefs
+
+# Rider
+.idea/
+
+# Database files
+*.mdf
+*.ldf
+*.db
+*.db-shm
+*.db-wal
+
+# Logs
+*.log
+logs/
+
+# Environment files
+appsettings.Development.json
+*.Development.json
+
+# Package manager cache
+packages/
+.nuget/
+
+# Build results
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+build/
+bld/
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Backup files
+*.bak
+*.tmp
+*.~*
+
+# Visual Studio Code
+.vscode/
+
+# Node modules (if any)
+node_modules/
+
+# Compiled JavaScript files
+*.js.map
+*.min.js
+
+# Migration backup files (keep the .cs files, ignore backups)
+/Migrations/*.Designer.cs.bak
+/Migrations/*.cs.bak
+
+# Publish profiles
+*.pubxml.user
