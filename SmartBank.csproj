@@ -20,7 +20,7 @@
 
   <ItemGroup>
     <Folder Include="Data\" />
-    <Folder Include="Models\Entities\" />
+    <Folder Include="Models\ViewModels\" />
     <Folder Include="SeedData\" />
     <Folder Include="Views\Account\" />
     <Folder Include="Views\Customers\" />
