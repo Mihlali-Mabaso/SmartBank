@@ -33,7 +33,9 @@ A digital banking system built with ASP.NET Core and EF Core, inspired by FNB's 
 - SQL Server (LocalDB)
 - C# (.NET 7/8)
 
+## Phase 1: Data Layer - Complete! ✅
 
+![Phase 1 Diagram](wwwroot/images/phase1-diagram.png)
 
 ## 🚀 How to Run This Project
 
