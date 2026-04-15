@@ -33,20 +33,7 @@ A digital banking system built with ASP.NET Core and EF Core, inspired by FNB's 
 - SQL Server (LocalDB)
 - C# (.NET 7/8)
 
-## Phase 1: Data Layer - Complete! ✅
 
-```mermaid
-graph TD
-    A[Entity Models<br/>Customer.cs, Account.cs, etc.] --> B[BankDbContext.cs<br/>DbSets + Configuration]
-    B --> C[Add-Migration InitialCreate<br/>Creates migration files]
-    C --> D[Update-Database<br/>Executes against SQL Server]
-    D --> E[(SQL Server Database<br/>SmartBankDB)]
-    
-    style A fill:#4CAF50,stroke:#333,stroke-width:2px
-    style B fill:#2196F3,stroke:#333,stroke-width:2px
-    style C fill:#FF9800,stroke:#333,stroke-width:2px
-    style D fill:#FF9800,stroke:#333,stroke-width:2px
-    style E fill:#9C27B0,stroke:#333,stroke-width:2px
 
 ## 🚀 How to Run This Project
 
