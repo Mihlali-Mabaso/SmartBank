@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using static SmartBank.Models.Entities.Accountcs;
+using static SmartBank.Models.Entities.Account;
 
 namespace SmartBank.Models.Entities
 {

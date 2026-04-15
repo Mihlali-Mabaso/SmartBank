@@ -52,4 +52,4 @@ namespace SmartBank.Models.Entities
         public virtual ICollection<Budget> Budgets { get; set; } = new List<Budget>();
     }
 }
-}
+
