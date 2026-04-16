@@ -20,10 +20,9 @@
 
   <ItemGroup>
     <Folder Include="Models\ViewModels\" />
-    <Folder Include="SeedData\" />
     <Folder Include="Views\Account\" />
-    <Folder Include="Views\Customers\" />
     <Folder Include="Views\Transactions\" />
+    <Folder Include="wwwroot\images\" />
   </ItemGroup>
 
 </Project>

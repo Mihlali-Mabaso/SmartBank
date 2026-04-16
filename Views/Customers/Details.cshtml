@@ -1,0 +1,63 @@
+﻿@model SmartBank.Models.Entities.Customer
+
+@{
+    ViewData["Title"] = "Customer Details";
+}
+
+<h1>Customer Details</h1>
+
+<div>
+    <h4>@Model.FullName</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">@Html.DisplayNameFor(model => model.FirstName)</dt>
+        <dd class="col-sm-10">@Html.DisplayFor(model => model.FirstName)</dd>
+
+        <dt class="col-sm-2">@Html.DisplayNameFor(model => model.LastName)</dt>
+        <dd class="col-sm-10">@Html.DisplayFor(model => model.LastName)</dd>
+
+        <dt class="col-sm-2">@Html.DisplayNameFor(model => model.Email)</dt>
+        <dd class="col-sm-10">@Html.DisplayFor(model => model.Email)</dd>
+
+        <dt class="col-sm-2">@Html.DisplayNameFor(model => model.PhoneNumber)</dt>
+        <dd class="col-sm-10">@Html.DisplayFor(model => model.PhoneNumber)</dd>
+
+        <dt class="col-sm-2">@Html.DisplayNameFor(model => model.DateJoined)</dt>
+        <dd class="col-sm-10">@Html.DisplayFor(model => model.DateJoined)</dd>
+    </dl>
+</div>
+
+<h4>Accounts</h4>
+@if (Model.Accounts != null && Model.Accounts.Any())
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Account Name</th>
+                <th>Account Number</th>
+                <th>Balance</th>
+                <th>Type</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var account in Model.Accounts)
+            {
+                <tr>
+                    <td>@account.AccountName</td>
+                    <td>@account.AccountNumber</td>
+                    <td>@account.Balance.ToString("C")</td>
+                    <td>@account.AccountType?.TypeName</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>No accounts found.</p>
+}
+
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.CustomerID">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

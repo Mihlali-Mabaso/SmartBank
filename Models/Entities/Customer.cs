@@ -5,7 +5,7 @@ namespace SmartBank.Models.Entities
     public class Customer
     {
         [Key]
-        public int CustormerIdD { get; set; }
+        public int CustomerID { get; set; }
 
        
         [Display(Name = "First Name")]
@@ -15,10 +15,10 @@ namespace SmartBank.Models.Entities
 
         [Display(Name = "Last Name")]
         [Required(ErrorMessage = "Last name is required")]
-        public string Last_Name { get; set; }
+        public string LastName { get; set; }
 
         [Display(Name = "Full name")]
-        public string FullName => $"{FirstName} {Last_Name}";
+        public string FullName => $"{FirstName} {LastName}";
 
         [Display(Name = "Email")]
         [Required(ErrorMessage = "Email is required")]

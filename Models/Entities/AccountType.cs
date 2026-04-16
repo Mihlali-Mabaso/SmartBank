@@ -6,14 +6,14 @@ namespace SmartBank.Models.Entities
     public class AccountType
     {
         [Key]
-        public int AccontTypeId { get; set; }
+        public int AccountTypeId { get; set; }
 
         [Required]
         [Display(Name = "Account type")]
-        public int AccountTypeId { get; set; } //saving, cheque, Credit card
+        public string TypeName { get; set; }
 
-        [Display(Name = "Desciption")]
-        public string AccountTypeName { get; set; }
+        [Display(Name = "Description")]
+        public string Description { get; set; }
 
         [Display(Name = "Monthly Fee")]
         [DataType(DataType.Currency)]
