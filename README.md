@@ -37,6 +37,13 @@ A digital banking system built with ASP.NET Core and EF Core, inspired by FNB's 
 
 ![Phase 1 Diagram](wwwroot/images/phase1-diagram.png)
 
+### Day 2: Entity Models & Database Design (April 15, 2026)
+
+**What I learned:**
+- Created 7 entity models: Customer, Account, AccountType, Transaction, Category, Budget, PendingTransaction
+- Learned about data annotations: `[Key]`, `[Required]`, `[ForeignKey]`, `[Display]`
+- Understood navigation properties: `ICollection<T>` for one-to-many relationships
+- Set up one-to-many relationships (Customer → Account, Account → Transaction)
 ## 🚀 How to Run This Project
 
 ```bash
